@@ -44,11 +44,11 @@ def download_images(url, folder_name="images", downloaded = set(), links = set()
                         downloaded.add(img_url) # prevents redundances
                         count += 1
                 except Exception as e:
-                    print(e, 100*2)
+                    print(e, 100*3)
         
 
         print(f"Downloaded {count} images to the folder '{folder_name}' from the page {url}.")
-        print("some random test on line 51-52")
+        print("some random test on line 51-51")
         
         # Extract and save all full urls for further scanning
         hyperlinks = soup.find_all('a')
