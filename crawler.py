@@ -48,6 +48,7 @@ def download_images(url, folder_name="images", downloaded = set(), links = set()
         
 
         print(f"Downloaded {count} images to the folder '{folder_name}' from the page {url}.")
+        print("some random test on line 51")
         
         # Extract and save all full urls for further scanning
         hyperlinks = soup.find_all('a')
