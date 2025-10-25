@@ -65,6 +65,7 @@ def download_images(url, folder_name="images", downloaded = set(), links = set()
 
 
 def main():
+    print("testing changes in GH")
     args = sys.argv[1:]
     while len(args) != 2: # user did not supply root url and depth of search
         print("\n\ntry again, this time type the full start url, and the depth for search/crawl (comma-seperated)\n")
