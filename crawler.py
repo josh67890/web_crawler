@@ -44,7 +44,7 @@ def download_images(url, folder_name="images", downloaded = set(), links = set()
                         downloaded.add(img_url) # prevents redundances
                         count += 1
                 except Exception as e:
-                    print(e)
+                    print(e, 100*2)
         
 
         print(f"Downloaded {count} images to the folder '{folder_name}' from the page {url}.")
@@ -93,4 +93,5 @@ def main():
         links = new_links
 
 if __name__ == "__main__":
+
     main()
